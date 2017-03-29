@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+}
+h1 {
+    font-size: 20px;
+    margin: 1.5em 0;
+}
+table.highlight-table {
+    max-width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+/*
+tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); //有效的
+}*/
+table.highlight-table td,
+table.highlight-table th {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+table.highlight-table thead th {
+    border-bottom-width: 2px;
+}
+table.highlight-table tbody th {
+    text-align: left;
+    white-space: nowrap;
+}
+
+table.highlight-table tbody > tr:hover,
+table.highlight-table tbody > tr:hover {
+    background: aquamarine;
+}
+table.highlight-table td:hover:after,
+table.highlight-table thead th:not(:empty):hover:after {
+    content:'';
+    position:absolute;
+    z-index: -1;
+    top:-1000px;
+    left:0;
+    width:100%;
+    height:2000px;
+    background:aquamarine;
+}
